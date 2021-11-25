@@ -12,6 +12,8 @@
       Flower Searcherは、入力された花の種類を認識するアプリです。
       <br />
       認識したい花の画像をアップロードしてみましょう。
+      <br />
+      アップロードするファイル名は<strong>英名</strong>でお願いいたします。
     </p>
     <form enctype="multipart/form-data" action="{% url 'app:upload' %}" method="POST">
       {% csrf_token %} {{form.as_p}}
